@@ -10,13 +10,11 @@ class SalarioTotalScreen extends StatefulWidget {
 
 class _SalarioTotalScreenState extends State<SalarioTotalScreen> {
   late final ListaCargosFuncionarios listaPrincipal;
-  late final TextEditingController controllerCodigoCargo;
   late int posicaoCargoEscolhido;
 
   @override
   void initState() {
     listaPrincipal = ListaCargosFuncionarios();
-    controllerCodigoCargo = TextEditingController();
     posicaoCargoEscolhido = 0;
     super.initState();
   }

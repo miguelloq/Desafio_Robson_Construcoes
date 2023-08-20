@@ -39,6 +39,12 @@ class _CadastroCargoScreenState extends State<CadastroCargoScreen> {
   }
 
   @override
+  void dispose() {
+    controllerSalario.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),

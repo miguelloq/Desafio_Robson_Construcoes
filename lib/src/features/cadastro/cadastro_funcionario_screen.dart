@@ -43,6 +43,12 @@ class _CadastroFuncionarioScreenState extends State<CadastroFuncionarioScreen> {
   }
 
   @override
+  void dispose() {
+    controllerNome.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
